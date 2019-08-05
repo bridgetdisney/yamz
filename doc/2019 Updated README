@@ -9,3 +9,5 @@ John Kunze can have them added so that you can ssh into the server.
 On your own VPN, in your terminal session, enter the following command:
 
 $ ssh yamz@ids-yamz2-dev.yamz.net
+
+2. Change directory and set virtual environment
