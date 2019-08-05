@@ -1,2 +1,11 @@
 # 2019 Updated README
 ## Will include local installation and AmazonAWS
+
+## Amazon AWS
+1. Connect to server
+The AWS server restricts access to certain IP addresses. If you can identify the IP addresses used by your university VPN, 
+John Kunze can have them added so that you can ssh into the server.
+
+On your own VPN, in your terminal session, enter the following command:
+
+$ ssh yamz@ids-yamz2-dev.yamz.net
