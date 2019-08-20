@@ -38,4 +38,8 @@ $ export DATABASE_URL=postgresql://rds-ids-yamz-dev.cmcguhglinoa.us-west-2.rds.a
 
  http://http://ids-yamz2-dev.yamz.net
 
+## PostGreSQL Notes
 
+## Amazon AWS First Time Setup
+
+## Local Setup
