@@ -43,3 +43,5 @@ $ export DATABASE_URL=postgresql://rds-ids-yamz-dev.cmcguhglinoa.us-west-2.rds.a
 ## Amazon AWS First Time Setup
 
 ## Local Setup
+
+## UNIX Tips and Tricks
