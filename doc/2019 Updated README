@@ -1,7 +1,8 @@
 # 2019 Updated README
 ## Will include local installation and AmazonAWS
 
-## Amazon AWS
+## Running YAMZ on the Amazon AWS Server
+
 1. Connect to server
 The AWS server restricts access to certain IP addresses. If you can identify the IP addresses used by your university VPN, 
 John Kunze can have them added so that you can ssh into the server.
@@ -10,4 +11,31 @@ On your own VPN, in your terminal session, enter the following command:
 
 $ ssh yamz@ids-yamz2-dev.yamz.net
 
-2. Change directory and set virtual environment
+2. Create directory (first time only)
+
+The first time, you'll want to create your own personal directory so that you can make changes that don't effect the
+original files which are in /apps/yamz/yamz.
+
+Your directory will be something like /apps/yamz/<yourname>. You can then copy /apps/yamz/yamz to /apps/yamz/<yourname>
+
+[not sure if you should populate your directory by using the GitHub clone or just copying the files over]
+cp -avr /apps/yamz/yamz /apps/yamz/<yourname>
+
+3. Change directory and set up virtual environment
+
+cd /apps/yamz/<yourdirectory>
+source ./venv/bin/activate
+
+4. Set the environment variable DATABASE_URL
+
+$ export DATABASE_URL=postgresql://rds-ids-yamz-dev.cmcguhglinoa.us-west-2.rds.amazonaws.com
+
+5. Start YAMZ
+
+ $ ./ice.py --role=contributor --config=.seaice &
+ 
+6. View YAMZ in your web browser
+
+ http://http://ids-yamz2-dev.yamz.net
+
+
